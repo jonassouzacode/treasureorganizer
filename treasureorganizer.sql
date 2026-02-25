@@ -20,3 +20,12 @@ CREATE TABLE Genero
     id INT AUTO_INCREMENT PRIMARY KEY,
     genero VARCHAR(50) NOT NULL,
 );
+
+-- tabela do tipo de encadernação dos livros
+CREATE TABLE Encadernacao 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    -- CD = CAPA DURA // CM = CAPA MOLE
+    tipo_encadernacao ENUM('CD','CM') NOT NULL,
+);
