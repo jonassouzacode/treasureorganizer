@@ -96,3 +96,14 @@ CREATE TABLE Album
     FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
     FOREIGN KEY (id_gravadora) REFERENCES Gravadora(id),
 );
+
+-- tabela que liga livros e autores, já que um livro pode
+-- vir a possuir vários autores
+CREATE TABLE Livros_Autor 
+(
+    isbn VARCHAR(13),
+    id_autor INT,
+    PRIMARY KEY (isbn, id_autor),
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn),
+    FOREIGN KEY (id_autor) REFERENCES Autor(id)
+);
