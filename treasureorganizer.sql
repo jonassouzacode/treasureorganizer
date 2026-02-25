@@ -14,3 +14,9 @@ CREATE TABLE Idioma
     idioma VARCHAR(50) NOT NULL,
 );
 
+-- tabela de gêneros, seja de álbuns ou de livros
+CREATE TABLE Genero
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    genero VARCHAR(50) NOT NULL,
+);
