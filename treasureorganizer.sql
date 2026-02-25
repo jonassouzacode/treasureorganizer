@@ -82,3 +82,17 @@ CREATE TABLE Livro
     FOREIGN KEY (id_tipo_encadernacao) REFERENCES Encadernacao(id),
     FOREIGN KEY (id_editora) REFERENCES Editora(id),
 );
+
+-- tabela do colecionável tipo álbum
+CREATE TABLE Album 
+(
+    id_colecionavel INT PRIMARY KEY,
+    -- o numero catalogo e o ean/upc podem servir de 
+    -- identificadores do album, quase como uma ISBN
+    numero_catalogo VARCHAR(50),
+    ean_upc VARCHAR(50),
+    tipo_album ENUM('CD', 'Vinil') NOT NULL,
+    id_gravadora INT,
+    FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
+    FOREIGN KEY (id_gravadora) REFERENCES Gravadora(id),
+);
