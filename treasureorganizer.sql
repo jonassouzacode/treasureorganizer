@@ -43,3 +43,10 @@ CREATE TABLE Gravadora
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
 );
+
+-- tabela do autor
+CREATE TABLE Autor 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL,
+);
