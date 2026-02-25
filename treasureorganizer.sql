@@ -29,3 +29,10 @@ CREATE TABLE Encadernacao
     -- CD = CAPA DURA // CM = CAPA MOLE
     tipo_encadernacao ENUM('CD','CM') NOT NULL,
 );
+
+-- tabela da editora
+CREATE TABLE Editora 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+);
