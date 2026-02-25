@@ -130,3 +130,13 @@ CREATE TABLE Colecao
     FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id)
 );
 
+-- tabela da lista de colecionáveis desejados pelo usuario
+CREATE TABLE Lista_Desejos
+(
+    id_usuario INT,
+    id_colecionavel INT,
+    data_adicao DATE,
+    PRIMARY KEY (id_usuario, id_colecionavel),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id),
+    FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id)
+);
