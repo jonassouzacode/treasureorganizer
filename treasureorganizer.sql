@@ -118,3 +118,15 @@ CREATE TABLE Album_Artista
     FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
     FOREIGN KEY (id_artista) REFERENCES Artista(id)
 );
+
+-- tabela da coleção de itens que o usuário possui
+CREATE TABLE Colecao 
+(
+    id_usuario INT,
+    id_colecionavel INT,
+    data_aquisicao DATE,
+    PRIMARY KEY (id_usuario, id_colecionavel),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id),
+    FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id)
+);
+
