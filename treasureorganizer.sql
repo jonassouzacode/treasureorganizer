@@ -70,3 +70,15 @@ CREATE TABLE Colecionavel
     FOREIGN KEY (id_genero) REFERENCES Genero(id),
     FOREIGN KEY (id_idioma) REFERENCES Idioma(id),
 );
+
+-- tabela do colecionável tipo livro
+CREATE TABLE Livro 
+(
+    id_colecionavel INT PRIMARY KEY,
+    isbn VARCHAR(13) UNIQUE NOT NULL,
+    id_tipo_encadernacao INT,
+    id_editora INT,
+    FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
+    FOREIGN KEY (id_tipo_encadernacao) REFERENCES Encadernacao(id),
+    FOREIGN KEY (id_editora) REFERENCES Editora(id),
+);
