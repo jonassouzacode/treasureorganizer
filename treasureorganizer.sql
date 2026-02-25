@@ -36,3 +36,10 @@ CREATE TABLE Editora
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
 );
+
+-- tabela da gravadora
+CREATE TABLE Gravadora 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+);
