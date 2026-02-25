@@ -6,3 +6,11 @@ CREATE TABLE Usuario
     email VARCHAR(100) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL
 );
+
+-- tabela dos idiomas
+CREATE TABLE Idioma 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    idioma VARCHAR(50) NOT NULL,
+);
+
