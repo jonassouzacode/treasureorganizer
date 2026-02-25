@@ -57,3 +57,16 @@ CREATE TABLE Artista
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(200) NOT NULL,
 );
+
+-- tabela do item colecionável
+CREATE TABLE Colecionavel 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_colecionavel ENUM ('Livro', 'Album') NOT NULL,
+    titulo VARCHAR(255) NOT NULL,
+    ano_lançamento INT,
+    id_genero INT,
+    id_idioma INT,
+    FOREIGN KEY (id_genero) REFERENCES Genero(id),
+    FOREIGN KEY (id_idioma) REFERENCES Idioma(id),
+);
