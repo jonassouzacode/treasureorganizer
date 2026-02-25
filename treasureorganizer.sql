@@ -50,3 +50,10 @@ CREATE TABLE Autor
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(200) NOT NULL,
 );
+
+-- tabela do artista
+CREATE TABLE Artista 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL,
+);
