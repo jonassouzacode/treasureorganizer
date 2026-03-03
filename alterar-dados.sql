@@ -26,3 +26,11 @@ FROM Lista_Desejos
 JOIN Colecionavel
 ON Lista_Desejos.id_colecionavel = Colecionavel.id
 WHERE Lista_Desejos.id_usuario = 1;
+
+-- ler todos os colecionaveis
+
+SELECT Colecionavel.titulo 
+FROM Colecao  
+JOIN Colecionavel 
+ON Colecao.id_colecionavel = Colecionavel.id
+WHERE Colecao.id_usuario = 1;
