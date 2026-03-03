@@ -47,3 +47,20 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9786559811991', 2);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 4, '2024-01-25');
+
+--5
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'The Court of the Dead', '2025', 6, 2);
+INSERT INTO Editora (nome) VALUES
+('Disney-Hyperion'); --3
+INSERT INTO Autor (nome) VALUES
+('Mark Oshiro'), --3
+('Rick Riordan'); --4
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(5, '9781368109116', 1, 3); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9781368109116', 3);
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9781368109116', 4);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 5, '2025-12-25');
