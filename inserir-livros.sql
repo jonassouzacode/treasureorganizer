@@ -23,3 +23,13 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9781529381009', 1);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 2, '2024-08-27'); 
+
+--3
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'A Curse for True Love', '2024', 2, 2);
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(3, '9781529399325', 2, 1); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9781529399325', 1);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 3, '2024-08-27'); 
