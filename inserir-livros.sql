@@ -90,3 +90,17 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9788566636833', 6);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 7, '2019-04-17');
+
+--8
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'Il Piccolo Principe', '2020', 2, 6);
+INSERT INTO Editora (nome) VALUES
+('Mondadori'); --5
+INSERT INTO Autor (nome) VALUES
+('Antoine de Saint-Exupéry'); --7
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(8, '9608562336284', 1, 5); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9608562336284', 7);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 8, '2025-02-02');
