@@ -64,3 +64,17 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9781368109116', 4);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 5, '2025-12-25');
+
+--6
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'O Circo Mecânico Tresaulti', '2013', 2, 1);
+INSERT INTO Editora (nome) VALUES
+('Darkside'); --4
+INSERT INTO Autor (nome) VALUES
+('Genevieve Valentine'); --5
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(6, '9788566636802', 1, 4); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9788566636802', 5);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 6, '2016-08-27');
