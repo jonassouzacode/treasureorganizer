@@ -41,3 +41,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (11, 3); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 11, '2025-12-25');
+
+--12
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Short n Sweet', '2024', 13, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Island Records'); --4
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(12, 'Island 123456', '0602475748274', 'CD', 4); 
+INSERT INTO Artista (nome) VALUES
+('Sabrina Carpenter'); --4
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(12, 4); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 12, '2025-05-06');
