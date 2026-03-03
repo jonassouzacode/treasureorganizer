@@ -18,3 +18,11 @@ VALUES (1, 19, CURDATE());
 DELETE FROM Lista_Desejos
 WHERE id_usuario = 1
 AND id_colecionavel = 19;
+
+-- mostrar lista de desejos atualizada
+
+SELECT Colecionavel.titulo 
+FROM Lista_Desejos
+JOIN Colecionavel
+ON Lista_Desejos.id_colecionavel = Colecionavel.id
+WHERE Lista_Desejos.id_usuario = 1;
