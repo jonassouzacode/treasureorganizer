@@ -13,3 +13,13 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9781529380941', 1);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 1, '2024-08-27'); 
+
+--2
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'The Ballad of Never After', '2023', 2, 2);
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(2, '9781529381009', 2, 1); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9781529381009', 1);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 2, '2024-08-27'); 
