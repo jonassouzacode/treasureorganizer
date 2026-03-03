@@ -47,4 +47,16 @@ JOIN Album_Artista
 ON Album.id_colecionavel = Album_Artista.id_colecionavel
 JOIN Artista
 ON Album_Artista.id_artista = Artista.id
-WHERE Genero.genero = 'Pop';  
+WHERE Genero.genero = 'Pop'; 
+
+-- busca por autor
+
+SELECT Colecionavel.titulo 
+FROM Livro 
+JOIN Colecionavel
+ON Livro.id_colecionavel = Colecionavel.id
+JOIN Livros_Autor
+ON Livro.isbn = Livros_Autor.isbn
+JOIN Autor
+ON Livros_Autor.id_autor = Autor.id
+WHERE Autor.nome = 'Stephanie Garber';
