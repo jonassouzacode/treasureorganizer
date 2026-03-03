@@ -18,3 +18,34 @@ INSERT INTO Idioma (idioma) VALUES
 ('Japonês'),
 --6
 ('Italiano');
+
+--inserir generos
+INSERT INTO Genero (genero) VALUES
+--1
+('Ficção Científica'),
+--2
+('Fantasia'),
+--3
+('Romance'),
+--4
+('Mistério'),
+--5
+('Terror'),
+--6
+('Aventura'),
+--7
+('Drama'),
+--8
+('Suspense');
+--9
+('Ficção');
+--10
+('MPB');
+--11
+('Rock Alternativo');
+--12
+('Pop Alternativo');
+--13
+('Pop');
+--14
+('Pop Psicodélico');
