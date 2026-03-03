@@ -119,3 +119,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (17, 7); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 17, '2023-12-25');
+
+--18
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Ultraviolence', '2014', 13, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Vertigo Berlin'); --9
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(18, 'POL-01234', '0602537857548', 'Vinil', 9); 
+INSERT INTO Artista (nome) VALUES
+('Lana Del Rey'); --8
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(18, 8); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 18, '2024-12-25');
