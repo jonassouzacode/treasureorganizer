@@ -11,14 +11,14 @@ CREATE TABLE Usuario
 CREATE TABLE Idioma 
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    idioma VARCHAR(50) NOT NULL,
+    idioma VARCHAR(50) NOT NULL
 );
 
 -- tabela de gêneros, seja de álbuns ou de livros
 CREATE TABLE Genero
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    genero VARCHAR(50) NOT NULL,
+    genero VARCHAR(50) NOT NULL
 );
 
 -- tabela do tipo de encadernação dos livros
@@ -27,35 +27,35 @@ CREATE TABLE Encadernacao
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     -- CD = CAPA DURA // CM = CAPA MOLE
-    tipo_encadernacao ENUM('CD','CM') NOT NULL,
+    tipo_encadernacao ENUM('CD','CM') NOT NULL
 );
 
 -- tabela da editora
 CREATE TABLE Editora 
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
+    nome VARCHAR(100) NOT NULL
 );
 
 -- tabela da gravadora
 CREATE TABLE Gravadora 
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
+    nome VARCHAR(100) NOT NULL
 );
 
 -- tabela do autor
 CREATE TABLE Autor 
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(200) NOT NULL,
+    nome VARCHAR(200) NOT NULL
 );
 
 -- tabela do artista
 CREATE TABLE Artista 
 (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(200) NOT NULL,
+    nome VARCHAR(200) NOT NULL
 );
 
 -- tabela do item colecionável
@@ -68,7 +68,7 @@ CREATE TABLE Colecionavel
     id_genero INT,
     id_idioma INT,
     FOREIGN KEY (id_genero) REFERENCES Genero(id),
-    FOREIGN KEY (id_idioma) REFERENCES Idioma(id),
+    FOREIGN KEY (id_idioma) REFERENCES Idioma(id)
 );
 
 -- tabela do colecionável tipo livro
@@ -80,7 +80,7 @@ CREATE TABLE Livro
     id_editora INT,
     FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
     FOREIGN KEY (id_tipo_encadernacao) REFERENCES Encadernacao(id),
-    FOREIGN KEY (id_editora) REFERENCES Editora(id),
+    FOREIGN KEY (id_editora) REFERENCES Editora(id)
 );
 
 -- tabela do colecionável tipo álbum
@@ -94,7 +94,7 @@ CREATE TABLE Album
     tipo_album ENUM('CD', 'Vinil') NOT NULL,
     id_gravadora INT,
     FOREIGN KEY (id_colecionavel) REFERENCES Colecionavel(id),
-    FOREIGN KEY (id_gravadora) REFERENCES Gravadora(id),
+    FOREIGN KEY (id_gravadora) REFERENCES Gravadora(id)
 );
 
 -- tabela que liga livros e autores, já que um livro pode
