@@ -55,3 +55,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (12, 4); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 12, '2025-05-06');
+
+--13
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'K12', '2019', 12, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Atlantic Records'); --5
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(13, 'ATL 2019-001', '0075678612367', 'Vinil', 5); 
+INSERT INTO Artista (nome) VALUES
+('Melanie Martinez'); --5
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(13, 5); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 13, '2024-06-17');
