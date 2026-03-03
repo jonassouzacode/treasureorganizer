@@ -79,3 +79,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (14, 5); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 14, '2024-10-08');
+
+--15
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Currents', '2015', 14, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Interscope Records'); --6
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(15, 'PIAS-00456', '0602547306777', 'Vinil', 6); 
+INSERT INTO Artista (nome) VALUES
+('Tame Impala'); --6
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(15, 6); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 15, '2025-12-25');
