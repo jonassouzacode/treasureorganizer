@@ -25,3 +25,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (20, 9); 
 INSERT INTO Lista_Desejos (id_usuario, id_colecionavel, data_adicao) VALUES 
 (1, 20, '2022-05-23');
+
+--21
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Wildfire Heart', '2021', 13, 1); 
+INSERT INTO Gravadora (nome) VALUES
+('Capitol Records'); --9
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(21, 'CAP-CD-2147', '602438765432', 'CD', 9); 
+INSERT INTO Artista (nome) VALUES
+('Valerie Monroe'); --10
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(21, 10); 
+INSERT INTO Lista_Desejos (id_usuario, id_colecionavel, data_adicao) VALUES 
+(1, 21, '2025-03-31');
