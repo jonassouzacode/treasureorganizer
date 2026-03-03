@@ -1,0 +1,1 @@
+-- script de leitura de dados da colecao
