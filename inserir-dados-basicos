@@ -49,3 +49,10 @@ INSERT INTO Genero (genero) VALUES
 ('Pop');
 --14
 ('Pop Psicodélico');
+
+--inserir tipos encadernação
+INSERT INTO Encadernacao (nome, tipo_encadernacao) VALUES
+--1
+('Capa Dura', 'CD'),
+--2
+('Capa Mole', 'CM');
