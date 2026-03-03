@@ -105,3 +105,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (16, 6); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 16, '2024-07-21');
+
+--17
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'AM', '2013', 11, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Domino Records'); --8
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(17, 'DOM-00357', '0887828031719', 'Vinil', 8); 
+INSERT INTO Artista (nome) VALUES
+('Artic Monkeys'); --7
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(17, 7); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 17, '2023-12-25');
