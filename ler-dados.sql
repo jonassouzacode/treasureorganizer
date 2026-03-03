@@ -34,3 +34,17 @@ ON Livro.isbn = Livros_Autor.isbn
 JOIN Autor
 ON Livros_Autor.id_autor = Autor.id
 WHERE Genero.genero = 'Fantasia';   
+
+-- busca album por genero
+
+SELECT Colecionavel.titulo, Artista.nome 
+FROM Album 
+JOIN Colecionavel
+ON Album.id_colecionavel = Colecionavel.id
+JOIN Genero
+ON Colecionavel.id_genero = Genero.id
+JOIN Album_Artista
+ON Album.id_colecionavel = Album_Artista.id_colecionavel
+JOIN Artista
+ON Album_Artista.id_artista = Artista.id
+WHERE Genero.genero = 'Pop';  
