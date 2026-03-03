@@ -78,3 +78,15 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9788566636802', 5);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 6, '2016-08-27');
+
+--7
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'Em Algum Lugar nas Estrelas', '2016', 6, 1);
+INSERT INTO Autor (nome) VALUES
+('Clare Vanderpool'); --6
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(7, '9788566636833', 1, 4); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9788566636833', 6);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 7, '2019-04-17');
