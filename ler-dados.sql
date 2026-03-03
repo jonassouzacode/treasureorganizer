@@ -72,3 +72,11 @@ ON Album.id_colecionavel = Album_Artista.id_colecionavel
 JOIN Artista
 ON Album_Artista.id_artista = Artista.id
 WHERE Artista.nome = 'Tame Impala';
+
+-- mostrar lista de desejos
+
+SELECT Colecionavel.titulo 
+FROM Lista_Desejos
+JOIN Colecionavel
+ON Lista_Desejos.id_colecionavel = Colecionavel.id
+WHERE Lista_Desejos.id_usuario = 1;
