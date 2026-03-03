@@ -33,3 +33,17 @@ INSERT INTO Livros_Autor (isbn, id_autor) VALUES
 ('9781529399325', 1);
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 3, '2024-08-27'); 
+
+--4
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Livro', 'Trono de Vidro', '2023', 2, 1);
+INSERT INTO Editora (nome) VALUES
+('Galera'); --2
+INSERT INTO Autor (nome) VALUES
+('Sarah J. Maas'); --2
+INSERT INTO Livro (id_colecionavel, isbn, id_tipo_encadernacao, id_editora) VALUES 
+(4, '9786559811991', 1, 2); 
+INSERT INTO Livros_Autor (isbn, id_autor) VALUES 
+('9786559811991', 2);
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 4, '2024-01-25');
