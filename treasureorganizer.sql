@@ -1,3 +1,6 @@
+create database treasureorganizer;
+use treasureorganizer;
+
 -- tabela do usuário
 CREATE TABLE Usuario 
 (
