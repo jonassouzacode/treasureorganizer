@@ -12,3 +12,9 @@ WHERE Lista_Desejos.id_usuario = 1;
 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao)
 VALUES (1, 19, CURDATE());
+
+-- remover item colecionavel da lista de desejos
+
+DELETE FROM Lista_Desejos
+WHERE id_usuario = 1
+AND id_colecionavel = 19;
