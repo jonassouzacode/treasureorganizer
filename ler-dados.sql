@@ -1,3 +1,5 @@
+use treasureorganizer;
+
 -- script de leitura de dados da colecao
 
 -- ler todos os livros da colecao
@@ -10,9 +12,8 @@ JOIN Livro
 ON Livro.id_colecionavel = Colecionavel.id
 WHERE Colecao.id_usuario = 1;
 
--- ler todos os albuns da colecao
+-- ler todos os albuns
 
-SELECT * FROM Album;
 SELECT Colecionavel.titulo
 FROM Colecao
 JOIN Colecionavel
@@ -47,7 +48,7 @@ JOIN Album_Artista
 ON Album.id_colecionavel = Album_Artista.id_colecionavel
 JOIN Artista
 ON Album_Artista.id_artista = Artista.id
-WHERE Genero.genero = 'Pop'; 
+WHERE Genero.genero = 'Pop';  
 
 -- busca por autor
 
@@ -80,3 +81,17 @@ FROM Lista_Desejos
 JOIN Colecionavel
 ON Lista_Desejos.id_colecionavel = Colecionavel.id
 WHERE Lista_Desejos.id_usuario = 1;
+
+-- consulta a colecao com o numero ID
+SELECT Colecionavel.id, Colecionavel.titulo
+FROM Colecionavel
+JOIN Colecao
+ON Colecionavel.id = Colecao.id_colecionavel
+ORDER BY Colecionavel.id;
+
+-- consulta colecionaveis lista de desejos com ID
+SELECT Colecionavel.id, Colecionavel.titulo
+FROM Colecionavel
+JOIN Lista_Desejos
+ON Colecionavel.id = Lista_Desejos.id_colecionavel
+ORDER BY Colecionavel.id;
