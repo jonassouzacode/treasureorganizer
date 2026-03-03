@@ -27,3 +27,17 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (10, 2); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 10, '2020-08-23');
+
+--11
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Deadbeat', '2025', 12, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Columbia Records'); --3
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(11, 'PIAS-00123', '0198029800425', 'CD', 3); 
+INSERT INTO Artista (nome) VALUES
+('Tame Impala'); --3
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(11, 3); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 11, '2025-12-25');
