@@ -69,3 +69,13 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (13, 5); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 13, '2024-06-17');
+
+--14
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'Portals', '2023', 12, 2); 
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(14, 'ATL 2023-002', '0075678637513', 'Vinil', 5); 
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(14, 5); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 14, '2024-10-08');
