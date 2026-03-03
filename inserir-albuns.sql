@@ -93,3 +93,15 @@ INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES
 (15, 6); 
 INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
 (1, 15, '2025-12-25');
+
+--16
+INSERT INTO Colecionavel (tipo_colecionavel, titulo, ano_lançamento, id_genero, id_idioma) VALUES 
+('Album', 'The Slow Rush', '2020', 14, 2); 
+INSERT INTO Gravadora (nome) VALUES
+('Fiction Records'); --7
+INSERT INTO Album (id_colecionavel, numero_catalogo, ean_upc, tipo_album, id_gravadora) VALUES 
+(16, 'DOM-00789', '0602577579561', 'Vinil', 7); 
+INSERT INTO Album_Artista (id_colecionavel, id_artista) VALUES 
+(16, 6); 
+INSERT INTO Colecao (id_usuario, id_colecionavel, data_aquisicao) VALUES 
+(1, 16, '2024-07-21');
