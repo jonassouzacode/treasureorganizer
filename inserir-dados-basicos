@@ -1,2 +1,5 @@
 -- inserção de dados básicos:
 
+--inserir usuario
+INSERT INTO Usuario (nome, email, senha) VALUES
+('Jonas', 'admin', '1234');
