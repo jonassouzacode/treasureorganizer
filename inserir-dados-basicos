@@ -3,3 +3,18 @@
 --inserir usuario
 INSERT INTO Usuario (nome, email, senha) VALUES
 ('Jonas', 'admin', '1234');
+
+--inserir idiomas
+INSERT INTO Idioma (idioma) VALUES
+--1
+('Português'),
+--2
+('Inglês'),
+--3
+('Espanhol'),
+--4
+('Francês'),
+--5
+('Japonês'),
+--6
+('Italiano');
